@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Demo: Tabs module</title>
+	<link rel="stylesheet" type="text/css" href="../css/tabs.css">
+</head>
+<body>
+	<div class="tab-group" data-tab-group="productInfo">
+		<h1>Product</h1>
+		<ul class="tabs">
+			<li data-tab="productInfo" data-actions="tabs.toggle" data-tab-value="overview" class="tab-current"><a href="#">Overview</a></li>
+			<li data-tab="productInfo" data-actions="tabs.toggle" data-tab-value="specs"><a href="#">Specifications</a></li>
+			<li data-tab="productInfo" data-actions="tabs.toggle" data-tab-value="reviews"><a href="#">Reviews</a></li>
+		</ul>
+		<div data-tab-pane="productInfo" data-tab-pane-value="overview" class="tab-pane-current">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros lacus, eleifend sit amet laoreet et, blandit in lacus. Aenean commodo sapien odio, eget vulputate enim aliquam ut. Vestibulum iaculis dui odio, sed lacinia purus commodo at. Donec velit odio, semper sit amet est ac, feugiat egestas purus. Proin consectetur elit a sem accumsan blandit. Quisque nisl magna, gravida eget nunc in, adipiscing varius nibh. Maecenas ut auctor mauris. Sed pulvinar fermentum lacus eu malesuada. Ut aliquet semper malesuada.</p>
+			<p>Maecenas rutrum suscipit sapien quis blandit. Nunc sollicitudin enim vitae ipsum condimentum vulputate. Donec lorem justo, fermentum nec varius sed, eleifend non purus. Morbi volutpat risus sed tincidunt lacinia. Mauris id posuere erat. Cras ut odio fermentum, ullamcorper nisi ut, mattis ante. Nunc nec hendrerit massa, placerat venenatis nisi. Nunc vulputate turpis sed leo adipiscing pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam ut lobortis metus. Duis ut erat odio.</p>
+			<p>Mauris sed nunc ultricies, facilisis quam venenatis, vestibulum lorem. Suspendisse in molestie justo. Ut porttitor porta felis, id sollicitudin nibh. Phasellus at pulvinar quam, et feugiat arcu. Fusce orci metus, tempus at arcu ut, convallis sollicitudin mi. Duis varius ultricies risus, nec iaculis erat auctor at. Pellentesque tempor velit eget tristique elementum. Nam mattis nibh placerat sem ornare consequat. In sed felis egestas, commodo lorem vitae, sodales dolor. Cras pharetra leo vitae tortor luctus, nec pretium nibh dignissim. Morbi elementum ut lacus sit amet vulputate. Integer ultricies tortor vel mauris lacinia varius. Donec vulputate sapien eu pellentesque ornare.</p>
+			<p>Nulla sed sodales nisi. Duis convallis tempus ligula volutpat tristique. Nulla in dolor ut magna rutrum auctor. Proin nec mi vitae libero faucibus sodales non quis metus. In tortor eros, fringilla at faucibus eget, sodales eu orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur blandit vel elit nec tempus. In hac habitasse platea dictumst. Morbi vel augue nibh. Mauris eget elementum urna, sit amet convallis quam. Donec sit amet euismod diam. Donec urna libero, suscipit vel laoreet vitae, pellentesque eget mi. Nunc porttitor congue odio, sit amet facilisis augue. Nam laoreet, ipsum egestas imperdiet adipiscing, dui eros eleifend tellus, vitae blandit lectus erat id nunc. Nulla sed gravida mi. Donec consectetur scelerisque ultrices.</p>
+			<p>Nullam pharetra purus nisl, eu tempus ante varius a. Ut ligula neque, sagittis sed nisl vitae, pharetra vestibulum velit. Vivamus auctor orci ac odio eleifend sodales. Integer lacinia congue nunc, eget mollis ligula ullamcorper in. Mauris varius, tortor vel lobortis vulputate, enim purus rhoncus nunc, id pellentesque velit ipsum vel ipsum. Nunc pellentesque mauris risus, ac ultricies dolor porta eget. In tincidunt metus ac convallis sodales. Aenean in ipsum semper, semper lorem nec, faucibus est. Vestibulum eu commodo sapien. Mauris varius purus odio, eu posuere libero malesuada id. In eu lorem hendrerit, volutpat erat et, ornare nibh. </p>
+		</div>
+		<div data-tab-pane="productInfo" data-tab-pane-value="specs">
+			<div data-tab-group="specs">
+				<ul class="tabs">
+					<li data-tab="specs" data-actions="tabs.toggle" data-tab-value="features" class="tab-current"><a href="#">Features</a></li>
+					<li data-tab="specs" data-actions="tabs.toggle" data-tab-value="technical"><a href="#">Technical</a></li>
+				</ul>
+				<div data-tab-pane="specs" data-tab-pane-value="features" class="tab-pane-current">
+					<ul>
+						<li>Feature 1</li>
+						<li>Feature 2</li>
+						<li>Feature 3</li>
+						<li>Feature 4</li>
+						<li>Feature 5</li>
+						<li>Feature 6</li>
+						<li>Feature 7</li>
+						<li>Feature 8</li>
+					</ul>
+				</div>
+				<div data-tab-pane="specs" data-tab-pane-value="technical" >
+					<ul>
+						<li>Spec 1</li>
+						<li>Spec 2</li>
+						<li>Spec 3</li>
+						<li>Spec 4</li>
+						<li>Spec 5</li>
+						<li>Spec 6</li>
+						<li>Spec 7</li>
+						<li>Spec 8</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div data-tab-pane="productInfo" data-tab-pane-value="reviews">
+			<p>Reviews</p>
+		</div>
+	</div>
+
+	<div class="tab-group" data-tab-group="admin">
+		<h1>Admin</h1>
+		<ul class="tabs">
+			<li data-tab="admin" data-actions="tabs.toggle" data-tab-value="products" class="tab-current"><a href="#">Products</a></li>
+			<li data-tab="admin" data-actions="tabs.toggle" data-tab-value="categories"><a href="#">Categories</a></li>
+			<li data-tab="admin" data-actions="tabs.toggle" data-tab-value="users"><a href="#">Users</a></li>
+			<li data-tab="admin" data-actions="tabs.toggle" data-tab-value="specials"><a href="#">Specials</a></li>
+			<li data-tab="admin" data-actions="tabs.toggle" data-tab-value="attributes"><a href="#">Attributes</a></li>
+		</ul>
+		<div data-tab-pane="admin" data-tab-pane-value="products" class="tab-pane-current">
+			<p>Products</p>
+		</div>
+		<div data-tab-pane="admin" data-tab-pane-value="categories">
+			<p>Categories</p>
+		</div>
+		<div data-tab-pane="admin" data-tab-pane-value="users">
+			<p>Users</p>
+		</div>
+		<div data-tab-pane="admin" data-tab-pane-value="specials">
+			<p>Special</p>
+		</div>
+		<div data-tab-pane="admin" data-tab-pane-value="attributes">
+			<p>Attributes</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../bower_components/oxydizr/src/Oxydizr.js"></script>
+	<script type="text/javascript" src="../bower_components/oxydizr/src/Oxydizr/FrontController.js"></script>
+	<script type="text/javascript" src="../bower_components/module-base/src/module/base.js"></script>
+	<script type="text/javascript" src="../bower_components/module-utils/dist/module-utils-base.concat.js"></script>
+	<script type="text/javascript" src="../bower_components/module-utils/dist/module-utils-events.concat.js"></script>
+	<script type="text/javascript" src="../bower_components/mocking_bird/src/mocking_bird.js"></script>
+	<script type="text/javascript" src="../bower_components/mocking_bird/src/mocking_bird/xml_http_request.js"></script>
+	<script type="text/javascript" src="../src/module/tab_module.js"></script>
+	<script type="text/javascript">
+		var frontController = new Oxydizr.FrontController()
+			.init(document.documentElement);
+
+		var tabs = new Module.TabModule();
+		tabs.controllerId = "tabs";
+		tabs.init(document.documentElement);
+		frontController.registerController(tabs);
+
+		// Fake event dispatcher
+		tabs.eventDispatcher = {
+			publish: function(name, publisher, data) {
+				console.info(name, publisher, data);
+			}
+		};
+	</script>
+</body>
+</html>

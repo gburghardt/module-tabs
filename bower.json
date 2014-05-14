@@ -3,14 +3,14 @@
 	"description": "Easy modular tabs",
 	"homepage": "https://github.com/gburghardt/module-tabs",
 	"repository": { "type": "git", "url": "https://github.com/gburghardt/module-tabs.git" },
-    "version": "1.0.0",
+    "version": "1.0.1",
 	"authors": [
 		"Greg Burghardt <greg_burghardt@yahoo.com>"
 	],
 	"license": "MIT",
 	"main": "src/module/tab_module.js",
 	"dependencies": {
-		"module-utils": "~1.0.3"
+		"module-utils": "~1.0.4"
 	},
 	"devDependencies": {
 		"mocking_bird": "~0.0.1",
